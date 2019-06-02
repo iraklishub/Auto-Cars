@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+</head>
+<body>
+	<header class="cont">
+		<div class="header_top">
+			<img id="logo" src="images/logowhite.png">
+			<nav class="header_menu">
+				<img id="burgerlogo" src="images/burger.png" onclick="menu()">
+				<div id="header_menu_wrapper" style="display: none;">
+					<div>
+						<img id="logo" src="images/logored.png">
+						<img id="header_menu_wrapper_burgerx"src="images/burgerx.png" onclick="menuclose()">
+					</div>
+					<ul>
+						<li>HOME</li>
+						<li>SERVICES</li>
+						<li>CONTACT</li>				
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="header_bot">
+			<span>27.11.</span>
+			<p>Vintage Auto Exhibition</p>
+		</div>
+		<div id="slide" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+			    <div class="carousel-item active">
+			      	<img id="slideimage" class="d-block w-100" src="images/car.png" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      	<img id="slideimage" class="d-block w-100" src="images/car.png" alt="Second slide">
+			    </div>
+			</div>
+			<a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+			    <span class="slide_control_iconleft"> 
+			    	<span>←</span>
+			    </span>
+			</a>
+			<a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+			    <span class="slide_control_iconright"> 
+			    	<span>→</span>
+			    </span>
+			</a>
+		</div>
+	</header>
+
+	<main class="cont">
+		<h1>THE CORNER GARAGE FOR COLLECTOR CARS</h1>
+
+		<section class="main_content">
+			<div class="content_card">
+				<img src="images/cardimg1.png">
+				<h1>MODIFY</h1>
+			</div>
+			<div class="content_card">
+				<img src="images/cardimg2.png">
+				<h1>BUY</h1>
+			</div>
+			<div class="content_card">
+				<img src="images/cardimg3.png">
+				<h1>REPAIR</h1>
+			</div>
+		</section>
+		
+		<section class="animation">
+			<div class="animation_background">
+				<img src="images/trees.png">
+			</div>
+			<div class="animation_road">
+				<img src="images/minicar.png">
+			</div>
+		</section>
+
+		<section class="form">
+			<div class="contact_info">
+				<span>CONTACT INFORMATION</span>
+				<div class="contact_icons">
+					<span>click to view</span>
+					<div>
+						<img src="images/googleicon.png">
+						<img src="images/fbicon.png">
+						<img src="images/twiticon.png">
+					</div>
+				</div>
+			</div>
+			<div class="contact_send">
+				<form onsubmit="">
+					<span>GET IN TOUCH</span>
+					<div class="form_items">
+						<div class="form_items_inputs1">
+							<label>
+								<input id="inputname" type="text" name="name" placeholder="name" required>
+								<span id="spanname" style="display: none; font-size: 16px;	color: red;">please write your name</span>
+							</label>
+							<label>
+								<input id="inputmail" type="email" name="email" placeholder="email" required>
+								<span id="spanmail" style="display: none; font-size: 16px; color: red;">please write your email</span>
+							</label>
+							<label>
+								<input id="inputsubject" type="text" name="subject" placeholder="subject" required>
+								<span id="spansubject" style="display: none;font-size: 16px;color: red;">please write subject</span>
+							</label>
+							<label>
+								<textarea id="inputtext" placeholder="text" required></textarea>
+								<span id="spantext" style="display: none;font-size: 16px;color: red;">please write text</span>
+							</label>
+						</div>
+						<div class="form_items_inputs2">
+							<div class="form_items_radio" >
+								<label for="radiomale">
+									<input id="radiomale" type="radio" name="gender" checked> 
+									<span> Male </span>
+								</label>
+								<label for="radiofemale">
+									<input id="radiofemale" type="radio" name="gender" > 
+									<span> Female </span>
+								</label> 
+							</div>
+							<div class="form_items_checkbox">
+								<span>Sign up for news letter:</span> 
+								<label>
+									<input type="checkbox" name="images"> 
+									<span>receive images </span>
+								</label>
+								<label>
+									<input type="checkbox" name="promotions"> 
+									<span>receive promotions </span>
+								</label>
+								<label>
+									<input type="checkbox" name="updates"> 
+									<span>receive updates </span>
+								</label>
+								<label>
+									<input type="checkbox" name="joboffers"> 
+									<span>receive job offers </span>
+								</label>
+							</div>
+							<input class="form_submit" type="submit" name="submit" value="send">
+						</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<div class="copyright">
+			<span>© copyright 2019</span>
+			<span>created by: </span>
+		</div>
+	</main>
+	<script src="bootstrap/jquery.min.js"></script>
+	<script src="bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="bootstrap/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
